@@ -8,7 +8,7 @@
 set -e
 
 # Required!
-export DEVICE=miatoll
+export DEVICE=curtana
 export VENDOR=xiaomi
 export DEVICE_BRINGUP_YEAR=2020
 export INITIAL_COPYRIGHT_YEAR=2020

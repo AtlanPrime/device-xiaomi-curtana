@@ -13,10 +13,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 cc_binary {
-    name: "android.hardware.power.stats@1.0-service.xiaomi_miatoll",
+    name: "android.hardware.power.stats@1.0-service.xiaomi_curtana",
     relative_install_path: "hw",
-    vintf_fragments: ["android.hardware.power.stats@1.0-service.xiaomi_miatoll.xml"],
-    init_rc: ["android.hardware.power.stats@1.0-service.xiaomi_miatoll.rc"],
+    vintf_fragments: ["android.hardware.power.stats@1.0-service.xiaomi_curtana.xml"],
+    init_rc: ["android.hardware.power.stats@1.0-service.xiaomi_curtana.rc"],
     srcs: ["service.cpp"],
     cflags: [
         "-Wall",

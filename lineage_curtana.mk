@@ -9,11 +9,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from the device configuration.
-$(call inherit-product, device/xiaomi/miatoll/device.mk)
+$(call inherit-product, device/xiaomi/curtana/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_miatoll
-PRODUCT_DEVICE := miatoll
+PRODUCT_NAME := lineage_curtana
+PRODUCT_DEVICE := curtana
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6250
 PRODUCT_MANUFACTURER := Xiaomi

@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/miatoll
+DEVICE_PATH := device/xiaomi/curtana
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -36,7 +36,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := miatoll
+TARGET_BOOTLOADER_BOARD_NAME := curtana
 
 # Build broken
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
@@ -77,7 +77,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := cust_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/miatoll
+TARGET_KERNEL_SOURCE := kernel/xiaomi/curtana
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
@@ -99,21 +99,16 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
-ODM_MANIFEST_SKUS += \
-    joyeuse
-
-ODM_MANIFEST_JOYEUSE_FILES := $(DEVICE_PATH)/manifest_joyeuse.xml
-
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_miatoll
-TARGET_RECOVERY_DEVICE_MODULES := libinit_miatoll
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_curtana
+TARGET_RECOVERY_DEVICE_MODULES := libinit_curtana
 
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse
+TARGET_OTA_ASSERT_DEVICE := curtana
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
@@ -208,6 +203,6 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit proprietary blobs
--include vendor/xiaomi/miatoll/BoardConfigVendor.mk
+-include vendor/xiaomi/curtana/BoardConfigVendor.mk
 
  

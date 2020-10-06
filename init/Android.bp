@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_miatoll",
+    name: "libinit_curtana",
     recovery_available: true,
-    srcs: ["init_miatoll.cpp"],
+    srcs: ["init_curtana.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init"
