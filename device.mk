@@ -213,8 +213,7 @@ PRODUCT_HOST_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/google/pixel \
-	vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+    hardware/google/pixel
 
 # Telephony
 PRODUCT_PACKAGES += \
