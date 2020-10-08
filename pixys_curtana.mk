@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/curtana/device.mk)
 $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
+#Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := pixys_curtana
 PRODUCT_DEVICE := curtana
 PRODUCT_BRAND := Xiaomi
